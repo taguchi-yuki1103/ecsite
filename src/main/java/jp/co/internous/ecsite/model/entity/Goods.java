@@ -17,7 +17,7 @@ public class Goods {
 	@Column(name="id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
-		
+	
 	@Column(name="goods_name")
 	private String goodsName;
 	
@@ -27,36 +27,35 @@ public class Goods {
 	@Column(name="updated_at")
 	private Timestamp updatedAt;
 	
-		public long getId() {
-			return id;
-			}
+	public long getId() {
+		return id;
+	}
 	
-		public void setId(long id) {
-			this.id = id;
-			}
+	public void setId(long id) {
+		this.id = id;
+	}
 	
-		public String getGoodsName() {
-			return goodsName;
-			}
+	public String getGoodsName() {
+		return goodsName;
+	}
 	
-		public void setGoodsName(String goodsName) {
-			this.goodsName = goodsName;
-			}
-		
-		public long getPrice() {
-			return price;
-			}
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
+	}
 	
-		public void setPrice(long price) {
-			this.price = price;
-			}
+	public long getPrice() {
+		return price;
+	}
 	
-		public Timestamp getUpdatedAt() {
-			return updatedAt;
-			}
+	public void setPrice(long price) {
+		this.price = price;
+	}
 	
-		public void setUpdatedAt(Timestamp updatedAt) {
-			this.updatedAt = updatedAt;
-			}
-		
+	public Timestamp getupdatedAt() {
+		return updatedAt;
+	}
+	
+	public void setupdatedAt(Timestamp updatedAt) {
+		this.updatedAt = updatedAt;
+	}
 }

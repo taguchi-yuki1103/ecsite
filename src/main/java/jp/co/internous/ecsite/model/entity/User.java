@@ -5,12 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;		
-			
+import javax.persistence.Table;
+
 @Entity
 @Table(name="user")
 public class User {
-	
+
 	@Id
 	@Column(name="id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -20,14 +20,14 @@ public class User {
 	private String userName;
 	
 	@Column(name="password")
-	private String password;
+	private String password ;
 	
 	@Column(name="full_name")
 	private String fullName;
 	
 	@Column(name="is_admin")
 	private int isAdmin;
-
+	
 	public long getId() {
 		return id;
 	}
@@ -47,11 +47,11 @@ public class User {
 	public String getPassword() {
 		return password;
 	}
-
+	
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
+	
 	public String getFullName() {
 		return fullName;
 	}
@@ -67,23 +67,4 @@ public class User {
 	public void setIsAdmin(int isAdmin) {
 		this.isAdmin = isAdmin;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
